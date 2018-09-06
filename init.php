@@ -124,6 +124,7 @@ if(!function_exists('getToken')){
         }else{
             $refresh_token = config('refresh_token');
             $token = onedrive::get_token($refresh_token);
+            $token['expires_on'] = time() + $token['expires_in'];
             $redis->value=serialize($token);
             $redis->setex();
             return (array)$token;
