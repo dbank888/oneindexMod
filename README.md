@@ -66,7 +66,7 @@ Onedrive Directory Index
 
 从docker仓库获取镜像：
 ```sh
-docker pull yinaoxiong/oneindex
+none
 ```
 
 或者从源码构建镜像：
