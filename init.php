@@ -85,12 +85,12 @@ if (!function_exists('cache')) {
                 return (array)unserialize($redis->get());
             }
             else{
-                $redis->value=serialize([Time, $value]);
+                $redis->value=serialize([time(), $value]);
                 $redis->setex();
                 return array(TIME, $value);
             }
 		} else {
-		    $redis->value=serialize([Time, $value]);
+		    $redis->value=serialize([time(), $value]);
 		    $redis->setex();
 			//file_put_contents($file, "<?php return " . var_export(array(TIME, $value), true) . ";", FILE_FLAGS);
 			return array(TIME, $value);
