@@ -43,7 +43,7 @@ class ImagesController{
                 $url = $_SERVER['HTTP_HOST'].$root.'/'.$remotefile.((config('root_path') == '?')?'&s':'?s');
                 $url = $http_type.str_replace('//','/', $url);
                 header('Content-Type:application/json');
-                echo json_encode(['code'=>0,'data'=>$result]);
+                echo json_encode(['code'=>0,'data'=>$url]);
             }
         }
     }

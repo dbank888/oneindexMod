@@ -189,7 +189,8 @@ class AdminController{
 		$data = onedrive::authorize($_GET['code']);
 		if(!empty($data['refresh_token'])){
 			config('refresh_token',$data['refresh_token']);
-			config('@token', $data);
+            getToken();
+			//config('@token', $data);
 		}
 		return view::load('install/install_3')->with('refresh_token',$data['refresh_token']);
 		

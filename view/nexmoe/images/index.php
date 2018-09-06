@@ -44,6 +44,7 @@
         layui.use(['upload','jquery'], function(){
             var upload = layui.upload;
             var $=layui.jquery;
+            var layer=layui.layer;
 
             //执行实例
             var uploadInst = upload.render({
@@ -51,11 +52,9 @@
                 ,url: '/images/upload' //上传接口
                 ,done: function(res){
                     //上传完毕回调
+                    layer.alert('上传成功，正在生成图片信息',{icon: 1});
                     console.log(res);
-                    $("img").attr("src",res.data.webUrl);
-                    $("#download").attr("value",res.data.webUrl);
-                    $("#getHtml").attr("value",'<img src='+res.data.webUrl+'>');
-                    $("#getMD").attr("value",'![]('+res.data.webUrl+')');
+                    window.location.href=res.data;
                 }
                 ,error: function(){
                     //请求异常回调
