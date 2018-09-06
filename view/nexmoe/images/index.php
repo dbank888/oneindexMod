@@ -8,11 +8,7 @@
 	<div class="mdui-typo-display-3-opacity" style="text-align:center;">免费Onedrive图床</div>
 	<div class="mdui-row-xs-3">
 	  <div class="mdui-col"></div>
-	  <div class="mdui-col">
-          <button type="button" class="layui-btn" id="uploadImg">
-              <i class="layui-icon" style="text-align:center">&#xe67c;</i>上传图片
-          </button>
-	  </div>
+
 	</div>
 
     <div class="mdui-container-fluid">
@@ -32,9 +28,13 @@
                 <label class="mdui-textfield-label">Markdown 引用地址</label>
                 <input id="getMD" class="mdui-textfield-input" type="text">
             </div>
-
+            <button type="button" class="layui-btn" id="uploadImg">
+                <i class="layui-icon" style="text-align:center">&#xe67c;</i>上传图片
+            </button>
         </div>
+
     </div>
+
 	
 </div>
 
