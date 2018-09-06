@@ -1,6 +1,18 @@
 # oneindex
 Onedrive Directory Index
 
+##魔改说明：
+感谢大佬donwa提供原版的oneindex源码
+
+本代码大部分基于donwa的oneindex添加内容自用
+
+##魔改内容
+1，缓存和token获取使用redis 默认60x60的有效期
+
+使用者只需要安装redis，不需要设置密码即可无痛使用
+
+2，图床使用ajax获取，可以直接展现链接和引用代码
+
 ## 功能：
 不用服务器空间，不走服务器流量，  
 
