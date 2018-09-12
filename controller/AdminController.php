@@ -24,6 +24,7 @@ class AdminController{
 	);
 	
 	public function __construct(){
+		$this->redis=new RedisDrive();
 	}
 
 	function login(){
