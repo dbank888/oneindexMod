@@ -66,13 +66,13 @@ Onedrive Directory Index
 
 从docker仓库获取镜像：
 ```sh
-docker pull yinaoxiong/oneindex
+none
 ```
 
 或者从源码构建镜像：
 
 ```shell
-git clone https://github.com/donwa/oneindex.git
+git clone https://github.com/david7207/oneindexMod.git
 cd oneindex/
 docker build -t your-image-name .
 ```
